@@ -9,7 +9,7 @@ import { cibNextJs } from '@coreui/icons';
 import "../styles/Projects.css"
 import { Button } from '@mui/material';
 
-const Proyecto = ({ nombre, descripcion, tecnologias, imagen }) => {
+const Proyecto = ({ nombre, descripcion, tecnologias, imagen, codigo, url }) => {
   return (
     <div className="proyecto">
       <div className='containerTitle'>
@@ -19,26 +19,44 @@ const Proyecto = ({ nombre, descripcion, tecnologias, imagen }) => {
       <p>{descripcion}</p>
       <p className="tecnologias">{tecnologias}</p>
       <div className="botones">
-          <Button variant="contained" size="small"      style={{
-            color: '#fff',
-            backgroundColor: '#6c5ce7', // Verde fuerte pastel
-            fontWeight: 'bold',
-            fontSize: '0.8em',
-            '&:hover': {
-              backgroundColor: '#a29bfe', // Cambio de color al hacer hover
-            },
-          }} startIcon={<FontAwesomeIcon icon={faCode} />}>
-            Codigo
-          </Button>
-          <Button variant="contained" size="small" style={{ color: '#000', fontWeight: 'bold', padding: "0.5em 0", marginLeft: "4px" }} startIcon={<FontAwesomeIcon icon={faEye} />}>
-
-          </Button>
-        </div>
+        {codigo && (
+          <a href={codigo} target="_blank" rel="noopener noreferrer">
+            <Button
+              variant="contained"
+              size="small"
+              style={{
+                color: '#fff',
+                backgroundColor: '#6c5ce7', // Verde fuerte pastel
+                fontWeight: 'bold',
+                fontSize: '0.8em',
+                '&:hover': {
+                  backgroundColor: '#a29bfe', // Cambio de color al hacer hover
+                },
+              }}
+              startIcon={<FontAwesomeIcon icon={faCode} />}
+            >
+              Codigo
+            </Button>
+          </a>
+        )}
+        {url && (
+          <a href={url} target="_blank" rel="noopener noreferrer">
+            <Button
+              variant="contained"
+              size="small"
+              style={{ color: '#000', fontWeight: 'bold', padding: "0.5em 0", marginLeft: "4px" }}
+              startIcon={<FontAwesomeIcon icon={faEye} />}
+            >
+              URL
+            </Button>
+          </a>
+        )}
+      </div>
       <img src={imagen} alt={nombre} className="imagen-proyecto2" />
-
     </div>
   );
 };
+
 
 const Proyectos = () => {
   return (
@@ -60,6 +78,7 @@ const Proyectos = () => {
             <span className="vps"><FontAwesomeIcon icon={faServer} /> VPS</span>
           </>
         }
+        url={"https://theuniverseofmanhwas.com"}
         imagen={require("../assets/TUM.png")}
       />
 
@@ -76,6 +95,7 @@ const Proyectos = () => {
             </span>
           </>
         }
+        codigo={"https://github.com/ImanolBraccciale/PF-Ferreteria"}
         imagen={require("../assets/rofe.png")}
       />
     </div>
