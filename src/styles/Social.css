@@ -1,0 +1,38 @@
+.redes-sociales-container {
+  text-align: start;
+  margin-bottom: 2em;
+  
+}
+
+.redes-sociales-buttons {
+  display: flex;
+}
+
+.redes-sociales-buttons a {
+  text-decoration: none;
+  padding: 8px 16px;
+  border-radius: 5px;
+  display: inline-block;
+  margin: 5px;
+  transition: background-color 0.3s; /* Transición de cambio de color */
+}
+
+.redes-sociales-buttons a.linkedin {
+  background-color: #0077b5;
+  color: #fff;
+  border: 1px solid #0077b5;
+}
+
+.redes-sociales-buttons a.linkedin:hover {
+  background-color: #005f91;
+}
+
+.redes-sociales-buttons a.github {
+  background-color: #333;
+  color: #fff;
+  border: 1px solid #333;
+}
+
+.redes-sociales-buttons a.github:hover {
+  background-color: #555;
+}

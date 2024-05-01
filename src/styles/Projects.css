@@ -1,0 +1,84 @@
+.proyectos-container{
+    text-align: start;
+}
+
+.proyectos-container h3 {
+    color: #ffa07a; /* Color anaranjado pastel */
+    font-size: 1.6em;
+  }
+  .tecnologias {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 10px;
+  }
+  
+  .tecnologias span {
+    display: flex;
+    align-items: center;
+    padding: 5px 10px;
+    border-radius: 5px;
+     color: #000;
+    font-size: 14px;
+  }
+  
+  .tecnologias span svg {
+    margin-right: 5px;
+  }
+  
+  .react {
+    background-color: #61dafbc7; /* Color de fondo para React */
+  }
+  
+  .nodejs {
+    background-color: #68a063c7; /* Color de fondo para Node.js */
+  }
+  
+  .aws {
+    background-color: #ff9900ce; /* Color de fondo para AWS */
+  }
+  
+  .adsense {
+    background-color: #fad70fbd; /* Color de fondo para Google Adsense */
+  }
+  
+  .nestjs {
+    background-color: #e0234fc4; /* Color de fondo para Nest.js */
+  }
+  
+  .mongodb {
+    background-color: #4db33dc4; /* Color de fondo para MongoDB */
+  }
+  
+  .vps {
+    background-color: #007acccc; /* Color de fondo para VPS */
+  }
+  
+  .next,.icon-svg{
+    width: 1em;
+    height: 1em;
+  }
+  .React{
+    background-color: #015a96d8; /* Color de fondo para VPS */
+
+  }
+
+  .imagen-proyecto2{
+    width: 440px;
+    border-radius: 1em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+  }
+ 
+  .botones{
+    font-size: 1em;
+    margin: 2em 0 0;
+  }
+
+   
+@media only screen and (max-width: 440px) {
+  .imagen-proyecto2{
+    width: 100%;
+  
+  }
+}

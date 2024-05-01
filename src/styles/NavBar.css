@@ -1,0 +1,28 @@
+.navbar-fixed {
+    position: fixed;
+  
+    width: 100%;
+    z-index: 1000;
+}
+
+.navbar-container {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #f0f0f0;  
+    padding: 5px;
+    border-radius: 4px;
+    max-width: 340px;
+}
+
+.nav-button {
+    background: none;
+    border: none;
+    color: #333; /* Letras oscuras */
+    cursor: pointer;
+ 
+    border-radius: 4px;
+}
+
+.nav-button:hover {
+    background-color: #ddd; /* Cambio de color al pasar el mouse */
+}
