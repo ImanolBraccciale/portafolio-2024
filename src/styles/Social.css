@@ -36,3 +36,11 @@
 .redes-sociales-buttons a.github:hover {
   background-color: #555;
 }
+.containerEmail {
+  margin-top: 0.5em;
+  display: flex;
+}
+
+.email {
+  margin-right: 0.1em;
+}

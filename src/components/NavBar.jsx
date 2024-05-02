@@ -12,10 +12,10 @@ const Navbar = () => {
       <div className="navbar-fixed">
       <div className="navbar-container" style={{ maxWidth: '440px' }}>
           <button className="nav-button" onClick={() => scrollToComponent('sobreMi')}>Sobre Mí</button>
-          <button className="nav-button" onClick={() => scrollToComponent('redesSociales')}>Redes</button>
           <button className="nav-button" onClick={() => scrollToComponent('habilidades')}>Habilidades</button>
           <button className="nav-button" onClick={() => scrollToComponent('experience')}>Experiencia</button>
           <button className="nav-button" onClick={() => scrollToComponent('proyectos')}>Proyectos</button>
+          <button className="nav-button" onClick={() => scrollToComponent('redesSociales')}>Redes</button>
       </div>
   </div>
     );

@@ -1,5 +1,4 @@
-import logo from './logo.svg';
-import './App.css';
+ import './App.css';
 import "./styles/star"
 import SobreMi from './components/AboutMe';
 import RedesSociales from './components/Social';
@@ -15,13 +14,11 @@ function App() {
     <div className="App">
       <div className="container" >
       <Navbar />
-        <div id="sobreMi">
+        <div id="sobreMi" >
           <SobreMi />
         </div>
-        <div id="redesSociales">
-          <RedesSociales />
-        </div>
-        <div id="habilidades">
+       
+        <div id="habilidades" >
           <Habilidades habilidades={habilidades} />
         </div>
         <div id="experience">
@@ -30,7 +27,9 @@ function App() {
         <div id="proyectos">
           <Proyectos />
         </div>
-
+        <div id="redesSociales">
+          <RedesSociales />
+        </div>
       </div>
     </div>
   );

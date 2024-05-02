@@ -4,6 +4,10 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+ 
+}
+.App div {
+  scroll-margin-top: 26px;
 }
 .container{
   max-width: 440px;
