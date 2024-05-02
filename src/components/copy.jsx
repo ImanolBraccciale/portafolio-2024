@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { IconButton, Snackbar } from '@mui/material';
 import CheckIcon from '@mui/icons-material/Check';
 
-const CopyToClipboardButton = () => {
+const CopyToClipboardButton = ({texts}) => {
   const [copied, setCopied] = useState(false);
   const [email, setEmail] = useState("imanol11699@outlook.com");
 
@@ -28,7 +28,7 @@ const CopyToClipboardButton = () => {
           color:"#000"
         }}
       >
-        {copied ? <CheckIcon /> : 'Copiar'}
+        {copied ? <CheckIcon /> : texts}
       </IconButton>
       <Snackbar
         open={copied}

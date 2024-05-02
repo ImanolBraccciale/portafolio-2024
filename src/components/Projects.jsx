@@ -26,16 +26,16 @@ const Proyecto = ({ nombre, descripcion, tecnologias, imagen, codigo, url }) => 
               size="small"
               style={{
                 color: '#fff',
-                backgroundColor: '#6c5ce7', // Verde fuerte pastel
+                backgroundColor: '#6c5ce7', // Light pastel green
                 fontWeight: 'bold',
                 fontSize: '0.8em',
                 '&:hover': {
-                  backgroundColor: '#a29bfe', // Cambio de color al hacer hover
+                  backgroundColor: '#a29bfe', // Color change on hover
                 },
               }}
               startIcon={<FontAwesomeIcon icon={faCode} />}
             >
-              Codigo
+              Code
             </Button>
           </a>
         )}
@@ -58,13 +58,26 @@ const Proyecto = ({ nombre, descripcion, tecnologias, imagen, codigo, url }) => 
 };
 
 
-const Proyectos = () => {
+const Proyectos = ({language}) => {
+  const texts={
+    es:{
+      titleh2:"Projects",
+      descripcionManhwas:"Comic reading page with monetization through google adsense, images uploaded to AWS S3, and administrator dashboard.",
+      descripcionFerre:"Product Management page specialized in Dashboard for merchandise and sales management.",
+
+    },
+    en: {
+      titleh2: "Projects",
+      descripcionManhwas: "Comic reading page with monetization through google adsense, images uploaded to AWS S3, and administrator dashboard.",
+      descripcionFerre: "Product Management page specialized in Dashboard for merchandise and sales management.",
+    }
+  }
   return (
     <div className="proyectos-container">
-      <h2><FontAwesomeIcon icon={faBoltLightning} /> Proyectos</h2>
+      <h2><FontAwesomeIcon icon={faBoltLightning} /> {texts[language].titleh2}</h2>
       <Proyecto
         nombre="The Universe of Manhwas"
-        descripcion="Pagina de lectura de comics con monetizacion por google adsense, imagenes subidas a AWS S3 y Dashboard de administrador."
+        descripcion={texts[language].descripcionManhwas}
         tecnologias={
           <>
             <span className="react"><CIcon icon={cibNextJs} className='next' />Next.js</span>
@@ -84,7 +97,7 @@ const Proyectos = () => {
 
       <Proyecto
         nombre="E-Ferreteria"
-        descripcion="Pagina de Gestion de Productos especializado en Dashboard para la gestión de mercaderia y ventas."
+        descripcion={texts[language].descripcionFerre}
         tecnologias={
           <>
             <span className="react"><CIcon icon={cibNextJs} className='next' />Next.js</span>
