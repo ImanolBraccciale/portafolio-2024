@@ -1,5 +1,5 @@
 .sobre-mi-container {
-  width: 340px;
+  width: 380px;
  
   text-align: start;
   margin-bottom: 2em;
@@ -31,4 +31,36 @@ p {
   margin: 0;
 }
 
- 
+ .containerT{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+ }
+
+ @media (max-width: 380px) {
+  .sobre-mi-container {
+    width: 100%;
+    padding: 0 ; /* Añade un poco de espacio a los lados */
+  }
+
+  .photo {
+    width: 80px;
+    height: 80px;
+    margin-top: 20px;
+  }
+  
+ .containerT{
+  display: flex;
+  align-items:start;
+  justify-content: space-between;
+  flex-direction: column;
+ }
+
+  h1 {
+    font-size: 1.5em;
+  }
+
+  h1 span {
+    font-size: 0.4em;
+  }
+}
