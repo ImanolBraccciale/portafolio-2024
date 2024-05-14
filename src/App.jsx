@@ -28,7 +28,7 @@ function App() {
       projects: 'Projects',
       socialMedia: 'Social Media',
       description: 'FullStack developer passionate about challenges, new projects, and innovative code.',
-      cv:"https://drive.google.com/file/d/1teB2EZv7I4ThT2q-lZJOsYqWkl1nfmRR/view?usp=drive_link"
+      cv:"https://drive.google.com/file/d/1-qeGnzhV26xmPLlM_yNkYc2Co7is0zoo/view?usp=drive_link"
     },
   };
 
