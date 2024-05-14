@@ -19,7 +19,7 @@ function App() {
       projects: 'Proyectos',
       socialMedia: 'Redes Sociales',
       description: 'Desarrollador FullStack amante de los retos, proyectos nuevos y códigos novedosos.',
-      cv:"https://drive.google.com/file/d/10a8bXrcf7286872xMFsxk8QZJ70bbN_L/view?usp=drive_link"
+      cv:"https://drive.google.com/file/d/1teB2EZv7I4ThT2q-lZJOsYqWkl1nfmRR/view?usp=drive_link"
     },
     en: {
       aboutMe: 'About Me',
