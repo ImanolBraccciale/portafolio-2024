@@ -8,7 +8,7 @@ const Experience = ({ language }) => {
         es: {
             experience: 'Experiencia',
             fullstackManhwas: 'Desarrollé desde el inicio su página web para la monetización de sus servicios, planifiqué y creé su aplicación web tanto frontend, backend, base de datos, SEO, gestión de VPS entre otras. Para optimizar el rendimiento y adaptarlo a largo plazo, implementé un sistema con AWS S3 para la gestión de imágenes por posibles cambios.',
-            eFerreteria: 'Durante mis estudios en Soy Henry, participé en un proyecto en grupo formado por programa 7 programadores donde me desempeñé como líder de backend, lo que me permitió desarrollar habilidades blandas y realizar el CRUD de productos, usuarios, pasarela de pagos, base de datos y su despliegue en el servidor.',
+            eFerreteria: 'Durante mis estudios en Soy Henry, participé en un proyecto en grupo formado por  7 programadores donde me desempeñé como líder de backend, lo que me permitió desarrollar habilidades blandas y realizar el CRUD de productos, usuarios, pasarela de pagos, base de datos y su despliegue en el servidor.',
             teachingAssistant: 'Colaboré estrechamente con los instructores para preparar y facilitar clases, además de brindar apoyo individualizado a los estudiantes en sesiones de estudio y tutorías. Proporcioné retroalimentación constructiva sobre el progreso de los estudiantes, lo cual fui reconocido con la insignia de liderazgo al finalizar mi estadía.'
         },
         en: {
