@@ -7,12 +7,15 @@ const Habilidades = ({ habilidades }) => {
     const habilidadesConColor = {
         JavaScript: '#fcd600da',
         TypeScript: '#3178c6',
+        Python: '#3128c6',
         AWS: '#ff9900ce',
         VPS: '#007acccc',
         MongoDB: '#4db33dc4',
+        Django: '#4dc83dc4',
         PostgreSQL: '#336791',
         'Next.js': '#61dafbc7',
         React: '#015a96d8',
+        'Java': '#e02841c4',
         'Nest.js': '#e0234fc4',
         'Node.js': '#68a063c7'
       };

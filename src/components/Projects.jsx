@@ -15,7 +15,7 @@ const Proyecto = ({ nombre, descripcion, tecnologias, imagen, codigo, url }) => 
       <div className='containerTitle'>
         <h3>{nombre}</h3>
       </div>
-      
+
       <p>{descripcion}</p>
       <p className="tecnologias">{tecnologias}</p>
       <div className="botones">
@@ -58,16 +58,17 @@ const Proyecto = ({ nombre, descripcion, tecnologias, imagen, codigo, url }) => 
 };
 
 
-const Proyectos = ({language}) => {
-  const texts={
-    es:{
-      titleh2:"Projects",
-      descripcionManhwas:"Comic reading page with monetization through google adsense, images uploaded to AWS S3, and administrator dashboard.",
-      descripcionFerre:"Product Management page specialized in Dashboard for merchandise and sales management.",
-
+const Proyectos = ({ language }) => {
+  const texts = {
+    es: {
+      titleh2: "Proyectos",
+      descripcionDigpatho: "Plataforma para la gestión de imágenes médicas y anotaciones, con integración de infraestructura en la nube y sistemas de inteligencia artificial.",
+      descripcionManhwas: "Página de lectura de cómics con monetización a través de Google Adsense, imágenes subidas a AWS S3 y un panel de administración.",
+      descripcionFerre: "Página de gestión de productos especializada en paneles para la administración de mercancías y ventas.",
     },
     en: {
       titleh2: "Projects",
+      descripcionDigpatho: "Platform for managing medical images and annotations, with cloud infrastructure integration and artificial intelligence systems.",
       descripcionManhwas: "Comic reading page with monetization through google adsense, images uploaded to AWS S3, and administrator dashboard.",
       descripcionFerre: "Product Management page specialized in Dashboard for merchandise and sales management.",
     }
@@ -75,6 +76,25 @@ const Proyectos = ({language}) => {
   return (
     <div className="proyectos-container">
       <h2><FontAwesomeIcon icon={faBoltLightning} /> {texts[language].titleh2}</h2>
+
+      <Proyecto
+        nombre="Digpatho"
+        descripcion={texts[language].descripcionDigpatho}
+        tecnologias={
+          <>
+            <span className="Django"><FontAwesomeIcon icon={faServer} /> Django</span>
+            <span className="react"><FontAwesomeIcon icon={faCode} /> Python</span>
+            <span className="javascript"><FontAwesomeIcon icon={faCode} /> JavaScript</span>
+            <span className="aws"><FontAwesomeIcon icon={faAws} /> AWS (EC2, ECS, ECR, etc.)</span>
+            <span className="terraform"><FontAwesomeIcon icon={faBoltLightning} /> Terraform</span>
+            <span className="sql"><FontAwesomeIcon icon={faMdb} /> SQL</span>
+          </>
+        }
+         url={"https://digpatho.com"}
+        imagen={require("../assets/dig.png")} // Asegúrate de tener esta imagen en tu proyecto
+      />
+
+
       <Proyecto
         nombre="The Universe of Manhwas"
         descripcion={texts[language].descripcionManhwas}

@@ -49,6 +49,25 @@
   .mongodb {
     background-color: #4db33dc4; /* Color de fondo para MongoDB */
   }
+  .python {
+    background-color: #4db33dc4; /* Color de fondo para MongoDB */
+  }
+  
+  .sql {
+    background-color: #007acccc; /* Color de fondo para MongoDB */
+  }
+  
+  .Django {
+    background-color: #4dc83dc4; /* Color de fondo para MongoDB */
+  }
+  
+  .javascript {
+    background-color: #fcd600da; /* Color de fondo para MongoDB */
+  }
+  
+  .terraform {
+    background-color: #4db33dc4; /* Color de fondo para MongoDB */
+  }
   
   .vps {
     background-color: #007acccc; /* Color de fondo para VPS */

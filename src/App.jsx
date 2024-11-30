@@ -19,7 +19,7 @@ function App() {
       projects: 'Proyectos',
       socialMedia: 'Redes Sociales',
       description: 'Desarrollador FullStack amante de los retos, proyectos nuevos y códigos novedosos.',
-      cv:"https://drive.google.com/file/d/1tEd1WQKddthLnE0aMeiGfk48WtWJqpe5/view?usp=drive_link"
+      cv:"https://drive.google.com/file/d/102zBKpAI4txc8bMSTCcjgvjOGjNGzPkn/view?usp=sharing"
     },
     en: {
       aboutMe: 'About Me',
@@ -28,11 +28,11 @@ function App() {
       projects: 'Projects',
       socialMedia: 'Social Media',
       description: 'FullStack developer passionate about challenges, new projects, and innovative code.',
-      cv:"https://drive.google.com/file/d/1-qeGnzhV26xmPLlM_yNkYc2Co7is0zoo/view?usp=drive_link"
+      cv:"https://drive.google.com/file/d/1l3mSRQGKdBesTKVJ-z3XUOApPLa4MNeH/view?usp=sharing"
     },
   };
 
-  const habilidades = ["JavaScript", "TypeScript", "AWS", "VPS", "MongoDB", "PostgreSQL", "Next.js", "React", "Nest.js", "Node.js"];
+  const habilidades = ["JavaScript", "TypeScript","Python","Django","Java", "AWS", "VPS", "MongoDB", "PostgreSQL", "Next.js", "React", "Nest.js", "Node.js"];
 
   const switchLanguage = (lang) => {
     setLanguage(lang);
